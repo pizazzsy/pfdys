@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DepositsHistoryViewController">
+            <connections>
+                <outlet property="defultButton" destination="tzj-qF-nY8" id="HbM-Ep-hpB"/>
+                <outlet property="lineView" destination="0Oi-IF-hIt" id="om7-KG-Ny7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a06-dP-vAz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzj-qF-nY8">
+                            <rect key="frame" x="0.0" y="10" width="125" height="20"/>
+                            <state key="normal" title="如意推荐">
+                                <color key="titleColor" red="0.27747251109999999" green="0.29529305709999998" blue="0.30458015700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="ufy-ga-82l"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efb-lo-omk">
+                            <rect key="frame" x="125" y="10" width="125" height="20"/>
+                            <state key="normal" title="散标投资">
+                                <color key="titleColor" red="0.27747251109999999" green="0.29529305709999998" blue="0.30458015700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="gXE-eB-J5S"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwm-FH-Muh">
+                            <rect key="frame" x="250" y="10" width="125" height="20"/>
+                            <state key="normal" title="债权转让">
+                                <color key="titleColor" red="0.27747251109999999" green="0.29529305709999998" blue="0.30458015700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="loW-e0-UgB"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Oi-IF-hIt">
+                            <rect key="frame" x="0.0" y="39" width="125" height="2"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.248351872" green="0.67758959529999996" blue="0.97149711849999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Zwm-FH-Muh" firstAttribute="leading" secondItem="Efb-lo-omk" secondAttribute="trailing" id="03v-RV-BXA"/>
+                        <constraint firstAttribute="bottom" secondItem="Efb-lo-omk" secondAttribute="bottom" constant="10" id="1H8-eL-KvA"/>
+                        <constraint firstItem="tzj-qF-nY8" firstAttribute="width" secondItem="Efb-lo-omk" secondAttribute="width" id="Cac-Td-ShY"/>
+                        <constraint firstItem="Efb-lo-omk" firstAttribute="leading" secondItem="tzj-qF-nY8" secondAttribute="trailing" id="CmN-rX-uuv"/>
+                        <constraint firstItem="Zwm-FH-Muh" firstAttribute="leading" secondItem="Efb-lo-omk" secondAttribute="trailing" id="ONR-zl-2VO"/>
+                        <constraint firstItem="Efb-lo-omk" firstAttribute="leading" secondItem="tzj-qF-nY8" secondAttribute="trailing" id="TvS-xu-tOQ"/>
+                        <constraint firstItem="Efb-lo-omk" firstAttribute="top" secondItem="a06-dP-vAz" secondAttribute="top" constant="10" id="W7x-kc-6ny"/>
+                        <constraint firstAttribute="trailing" secondItem="Zwm-FH-Muh" secondAttribute="trailing" id="bjt-fS-GBl"/>
+                        <constraint firstItem="Efb-lo-omk" firstAttribute="width" secondItem="Zwm-FH-Muh" secondAttribute="width" id="hzJ-nW-LCa"/>
+                        <constraint firstAttribute="bottom" secondItem="Zwm-FH-Muh" secondAttribute="bottom" constant="10" id="i0v-T5-Nkk"/>
+                        <constraint firstAttribute="bottom" secondItem="tzj-qF-nY8" secondAttribute="bottom" constant="10" id="vJ5-w6-GqM"/>
+                        <constraint firstAttribute="height" constant="40" id="w5j-8C-WzQ"/>
+                        <constraint firstItem="tzj-qF-nY8" firstAttribute="top" secondItem="a06-dP-vAz" secondAttribute="top" constant="10" id="yFe-uU-GtF"/>
+                        <constraint firstItem="tzj-qF-nY8" firstAttribute="leading" secondItem="a06-dP-vAz" secondAttribute="leading" id="ydL-Ps-Kfa"/>
+                        <constraint firstItem="Zwm-FH-Muh" firstAttribute="top" secondItem="a06-dP-vAz" secondAttribute="top" constant="10" id="z7O-h0-QKd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a06-dP-vAz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PMy-qf-cwi"/>
+                <constraint firstAttribute="trailing" secondItem="a06-dP-vAz" secondAttribute="trailing" id="PZ5-kR-yWI"/>
+                <constraint firstItem="a06-dP-vAz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fd6-gk-YAW"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

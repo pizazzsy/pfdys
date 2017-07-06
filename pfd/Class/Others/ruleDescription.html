@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="ui-box.css">
+    <link rel="stylesheet" href="ui-base.css">
+    <link rel="stylesheet" href="ui-color.css">
+    <link rel="stylesheet" href="appcan.icon.css">
+    <link rel="stylesheet" href="appcan.control.css">
+    <link rel="stylesheet" href="main.css">
+    <style type="text/css">
+        .alltitle li,.recharge li{
+            padding: 0.625em 0.9375em;
+            border-bottom: 1px solid #e9e9e9;
+        }
+        .title{
+            font-size: 0.9375em;
+            color: #333;
+        }
+        .subtitle{
+            margin: 0.625em 0;
+            font-size: 0.75em;
+            line-height: 1.5;
+            color: #999;
+            border-top: 1px solid #e9e9e9;
+            padding-top: 0.8em;
+        }
+        .subtext{
+            font-size: 0.75em;
+            line-height: 1.5;
+            color: #999;
+        }
+ 
+    </style>
+</head>
+
+<body class="um-vp bg_w">
+    <div class="">        
+
+        <div class="recharge ">
+            <ul>
+                <li>
+                    <span class="title">一、自动投标排队规则</span>
+                    <p class="subtitle">
+                        <p class="subtext">先抓取符合当前自动标投资条件的用户，然后在适合的用户中按照排名先后，进行排队，再筛选排队的用户中是否有投资资格（投资资格是指：开通存管账户，且账户余额大于最低投标金额），再次根据排序进行投标，因此没有了跳过标的的概念，也较难预估投标时间，投资人有意向进行自动投标轮流的，可提前进行充值。</p>                       
+                        <p class="subtext">以下几种情况将导致重新排队：</p>
+                                                
+                        <p class="subtext">a)更改期限设置；</p>
+                        <p class="subtext">b)更改下限，上限设置；</p>
+                        <p class="subtext">c)自动投标关闭后重新开启；</p>
+                        <p class="subtext">d)成功投标之后（除部分中标）；</p>
+                        <p class="subtext">e)轮到时，账户余额小于50；</p>
+                        <p class="subtext">f)账户余额小于最低投标金额时，重新排队；</p> 
+                    </p> 
+                </li>
+                <li>
+                    <span class="title">二、部分中标情况介绍</span>
+                    <p class="subtitle">
+                        <p class="subtext">部分中标是指，用户是最后一个中标的，可能标剩余额度小于50元，这时投资人也会中标，不过不会重新排队，投资人账户的资金会继续投中下一个符合投资人投标设置的标。部分中标时，请勿修改任何设置，避免重新排队。</p>                        
+                    </p> 
+                </li>
+                <li>
+                    <span class="title">三、投资金额区间设置和余额全投设置</span>
+                    <p class="subtitle">
+                        <p class="subtext">最低和最高投标金额不可低于50；最高投标金额设置为0或者不输入任何金额，将会把用户账户余额全部投出（余额需要大于50）。</p>                       
+                        <br>
+                        <p class="subtext">投标金额下限设置：</p>
+                        <p class="subtext">表示匹配您的最小的标，简单的说就是最少投多少（除部分中标）。如果最低投资金额设置过低，在遇到小标，或者标的所剩额度过小的情况下，投资人容易中小额标，从而导致剩余资金重新排队，资金站岗。平方贷目前自动投标没有额度限制，标的额度平均在10万左右，投资人可参考标的平均额度设置投标下限。</p>
+                        <br>
+                        <p class="subtext">投标金额上限设置：</p>
+                        <p class="subtext">表示匹配您的最大投资金额的标，简单的说就是最多投多少（除部分中标）。 最高投标金额设置为0或者不输入任何金额，则会将账户余额全部投出。</p>
+                        <p class="subtext">例如：下限设置5万表示您可以投中的标的额度最小为5万，由于进行了投标金额上限的设置，因此正常情况下您投资的金额也是大于等于5万，如果遇到您的标是10万，您的账户资金充足，也可以成功投资10万。</p> 
+                        <p class="subtext">说明：如果用户下限设置5万，且设置投标金额上限大于设置投标金额下限的设置，一旦投资人账户资金充足，自动投标的投资可能大于5万。</p> 
+
+                    </p> 
+                </li>
+                <li>
+                    <span class="title">四、投标期限区间设置</span>
+                    <p class="subtitle">
+                        <p class="subtext">投资人可以按照自己的投资习惯对投资期限进行设置。目前自动投标的设置无法单独设置天标，如需天标可以选择“不限”—“月份”，例如：设置“不限—3个月”，即表示天标、1个月、2个月、3个月都符合设置。</p>                       
+                    </p> 
+                </li>
+                <li>
+                    <span class="title">五、其他</span>
+                    <p class="subtitle">
+                        <p class="subtext">自动投标不排除可能会出现开启后还没来得及设置就已中标的情况，因此建议用户先设置后保存，最后选择开启。</p>                       
+                    </p> 
+                </li>
+                <li>
+                    <span class="title">六、自动投标红包使用规则</span>
+                    <p class="subtitle">
+                        <p class="subtext">自动投标开启使用红包优惠的功能后，当自动投标时可以自动使用抵扣红包和加息红包，将使用符合红包使用条件中优惠金额最大的红包。</p>
+                        <p class="subtext">如有疑问请咨询在线客服或拔打网站服务热线：400-076-7599</p>                       
+                    </p> 
+                </li>
+            </ul>
+        </div>
+
+    </div>    
+    <script src="js/appcan.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/appcan.control.js"></script>
+    <script src="js/appcan.listview.js"></script>
+    <script src="js/appcan.slider.js"></script>
+    <script src="js/appcan.tab.js"></script>
+    <script>    
+    appcan.ready(function() {
+    })
+ </script>
+
+</body>
+
+</html>

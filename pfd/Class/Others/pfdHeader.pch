@@ -1,0 +1,88 @@
+//
+//  pfdHeader.pch
+//  pfd
+//
+//  Created by PFZC on 2017/6/9.
+//  Copyright © 2017年 PFZC. All rights reserved.
+//
+
+#ifndef pfdHeader_pch
+#define pfdHeader_pch
+
+#define MAINWIDTH [UIScreen mainScreen].bounds.size.width
+#define MAINHEIGTH [UIScreen mainScreen].bounds.size.height
+#define RGB(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+//APP中主字体颜色
+#define COLOR_FONT [UIColor colorWithRed:58/255.0 green:58/255.0 blue:58/255.0 alpha:1]
+//APP页面背景色
+#define COLOR_BG [UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:1]
+//APP中线条颜色
+#define COLOR_LINE [UIColor colorWithRed:214/255.0 green:214/255.0 blue:214/255.0 alpha:1]
+//APP主字体大小
+#define FONT_SIZE 15.0f
+//APP INFO
+#define APP_MARK @"com.dimeng.pfd"
+#define APP_NAME @"AppName"
+#define VERSION @"v0.1.0"
+#define COPYRIGHT @""
+#define COPYRIGHTPHONE @""
+#define COPYRIGHTEMAIL @""
+#define DownloadAddress @""
+
+
+
+#import "AppUtils.h"
+#import "AFNetworking.h"
+#import "SVProgressHUD.h"
+#import <SSKeychain.h>
+#import <SSKeychainQuery.h>
+#import <IQKeyboardManager.h>
+#import "MJRefresh.h"
+
+
+
+
+#import "FindViewController.h"
+#import "ItemListViewController.h"
+#import "MyViewController.h"
+#import "HomeViewController.h"
+#import "NavigationController.h"
+#import "TabBarController.h"
+#import "listTopView.h"
+#import "RecommendViewController.h"
+#import "InvestViewController.h"
+#import "TransferViewController.h"
+#import "RecommendTableViewCell.h"
+#import "WebViewController.h"
+#import "ImageViewController.h"
+#import "PlatformDataViewController.h"
+#import "NoticeViewController.h"
+#import "ActivityViewController.h"
+#import "DynamicViewController.h"
+#import "MessageViewController.h"
+#import "SetViewController.h"
+#import "HotSaleTableViewCell.h"
+#import "ProjectDetailsViewController.h"
+#import "DepositsHistoryViewController.h"
+#import "DaiShouViewController.h"
+#import "AutomaticBidViewController.h"
+#import "RedPacketViewController.h"
+#import "CreditorRightsTransferViewController.h"
+#import "ShareViewController.h"
+#import "HelpCenterViewController.h"
+#import "ChangePwdViewController.h"
+#import "LoginViewController.h"
+#import "RegisterViewController.h"
+#import "RetrievePasswordViewController.h"
+#import "RetrievePwdSecondViewController.h"
+#import "JXGesturePasswordView.h"
+#import "JXGesturePasswordViewController.h"
+#import "BuyViewController.h"
+#import "ProjectDetailsTwoViewController.h"
+#import "BuySecondViewController.h"
+#import "DepositsHistoryTableViewCell.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* pfdHeader_pch */
